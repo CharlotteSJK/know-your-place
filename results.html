@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>KYP Results</title>
+  </head>
+  
+  <body class="results-container">
+
+    <div class="header">
+      <header>
+        <h1 class="kyp-title">KnowYourPlace</h1>
+        <a href="#home"></a>
+      </header>
+      <!-- Navigation links (hidden by default) -->
+      <div id="nav-links" class="navigation">
+        <a href="#about">HOW IT WORKS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="" class="menu" onclick="myFunction()">
+        <img src="images/three-horizontal-lines.svg" alt="menu" class="hamburger">
+      </a>
+    </div>
+
+    <main class="results-main">
+
+      <section class="results-image-holder">
+        <picture>
+          <source media="(max-width: 687px)" srcset="images/ocean-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/ocean-desktop-web.jpg">
+          <img src="images/ocean-desktop-web.jpg" alt="Swirling ocean waves" class="results-main-image">
+        </picture>
+        <div id="results-links">
+          <ul class="results-nav">
+            <h2 class="results-title">Browse and save your place results...</h2>
+            <li><a href="#EAT" class="eat-results">EAT</a></li>
+            <li><a href="#DRINK" class="drink-results">DRINK</a></li>
+            <li><a href="#DAY" class="day-results">DAY</a></li>
+            <li><a href="#NIGHT" class="night-results">NIGHT</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="results-gallery">
+
+        <picture class="results-image-one" class="eat-result-images">
+          <!-- <source media="(max-width: 687px)" srcset="images/mandarosso-eat-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/mandarosso-eat-desktop.jpg"> -->
+          <img src="images/mandarosso-eat-desktop.jpg" alt="Cucine Mandarosso">
+        </picture>
+        <div class="results-text-one">
+          <h3 class="results-text-title">Cucine Mandarosso</h3>
+          <p>Italian with great pastas</p>
+        </div>
+        
+        <picture class="results-image-two" class="eat-result-images">
+          <!-- <source media="(max-width: 687px)" srcset="images/mandarosso-eat-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/mandarosso-eat-desktop.jpg"> -->
+          <img src="images/bangkok-cafe.jpg" alt="Bangkok Cafe">
+        </picture>
+        <div class="results-text-two">
+          <h3 class="results-text-title">Bangkok Cafe</h3>
+          <p>Cute Thai in Les Corts</p>
+        </div>
+
+        <picture class="results-image-three" class="eat-result-images">
+          <!-- <source media="(max-width: 687px)" srcset="images/mandarosso-eat-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/mandarosso-eat-desktop.jpg"> -->
+          <img src="images/la-chula.jpg" alt="La Chula Cervecería Mexicana">
+        </picture>
+        <div class="results-text-three">
+          <h3 class="results-text-title">La Chula Cervecería Mexicana</h3>
+          <p>Micheladas and Ceviche</p>
+        </div>
+
+        <picture class="results-image-one" class="drink-result-images">
+          <!-- <source media="(max-width: 687px)" srcset="images/mandarosso-eat-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/mandarosso-eat-desktop.jpg"> -->
+          <img src="images/mandarosso-eat-desktop.jpg" alt="Antic theatre">
+        </picture>
+        <div class="results-text-one">
+          <h3 class="results-text-title">Antic theatre</h3>
+          <p>Outdoor theatre bar</p>
+        </div>
+        
+        <picture class="results-image-two" class="drink-result-images">
+          <!-- <source media="(max-width: 687px)" srcset="images/mandarosso-eat-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/mandarosso-eat-desktop.jpg"> -->
+          <img src="images/bangkok-cafe.jpg" alt="Bar Andorra">
+        </picture>
+        <div class="results-text-two">
+          <h3 class="results-text-title">Bar Andorra</h3>
+          <p>Booths and croquetas</p>
+        </div>
+
+        <picture class="results-image-three" class="drink-result-images">
+          <!-- <source media="(max-width: 687px)" srcset="images/mandarosso-eat-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/mandarosso-eat-desktop.jpg"> -->
+          <img src="images/la-chula.jpg" alt="Bar Raim">
+        </picture>
+        <div class="results-text-three">
+          <h3 class="results-text-title">Bar Raim</h3>
+          <p>Havana vibes</p>
+        </div>
+
+      </section>
+
+    <script src="js/main.js"></script>
+    </main>
+
+  
+
+  
+
+    <footer class="footer">
+      <p>&copy;KnowYourPlace</p>
+      <ul class="social-list">
+        <li>
+          <a href="https://www.twitter.com/charlottekeddie" target="_blank"><img src="images/twitter.svg" class="twitter" alt="Twitter logo"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/charlotte-keddie-15522316?originalSubdomain=es" target="_blank"><img src="images/instagram.svg" class="instagram" alt="Instagram logo"></a>
+        </li>
+      </ul>
+             
+      <div class="contact-us">
+        <p>Contact Us</p>
+        <form action="action_page.php" class="contact" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </footer>
+  </body>
+</html>

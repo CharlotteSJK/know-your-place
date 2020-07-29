@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Know Your Place</title>
+  </head>
+  <body>
+  <div class="grid-container">
+
+<!-- Top Navigation Menu -->
+  <div class="header">
+    <header>
+      <h1 class="kyp-title">KnowYourPlace</h1>
+      <a href="#home"></a>
+    </header>
+    <!-- Navigation links (hidden by default) -->
+    <div id="nav-links" class="navigation">
+      <a href="#about">HOW IT WORKS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="" class="menu" onclick="myFunction()">
+      <img src="images/three-horizontal-lines.svg" alt="menu" class="hamburger">
+    </a>
+  </div>
+
+    <main class="main"> 
+      <div class="main-image-holder">
+        <picture>
+          <source media="(max-width: 687px)" srcset="images/balloons-mobile-web-fade.jpg">
+          <source media="(min-width: 688px)" srcset="images/balloons-desktop-web-fade.jpg">
+          <img src="images/balloons-desktop-web-fade.jpg" alt="Hot air ballons in the blue sky" class="main-image">
+        </picture>
+        <h3 class="tagline">What kind of holiday person are you?</h3>
+      </div>
+
+      <div class="options">
+        <ul>
+        <li class="wine">A long lunch with a bottle of wine person?</li> 
+        <li class="yoga">A sunrise yoga on the beach type?</li>
+        <li class="art">A first in line gallery enthusiast?</li>
+        <li class="late">A late night bar crawler?</li> 
+        <li class="all">All of the above?</li>
+        </ul>
+        <br>
+      </div>
+      <section class="blurb">
+        <div>
+          <p>Whether you’re new to a destination or a near native, KnowYourPlace has explored all corners of the Internet to deliver you the top selection of cool bars, delicious restaurants, inspired activities and secret spots.</p>
+        </div>
+        <br>
+        <div>
+          <p>Our experts have already done the legwork. Set yourself free from searching and let us deliver your personal holiday hitlist.</p>  
+        </div>
+      </section>
+
+      <section>
+      <h3 class="select">Get your list</h3>
+      <p class="blurb">Use the filters to build your perfect trip from our curated picks and get to KnowYourPlace.</p>
+      </section>
+      
+      <section class="gallery">
+        <picture class="menu-image">
+          <source media="(max-width: 687px)" srcset="images/pizza-man-small-mobile.jpg" class="eat">
+          <source media="(min-width: 688px)" srcset="images/pizza-man-small-web.jpg">
+          <img src="images/pizza-man-small-web.jpg" alt="Man eating pizza" class="gallery-image">
+          <button id="eat-btn" class="eat-btn">EAT</button>
+        </picture>
+
+        <picture class="menu-image">
+          <source media="(max-width: 687px)" srcset="images/bar-man-small-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/bar-man-small-web.jpg">
+          <img src="images/bar-man-small-web.jpg" alt="Man eating pizza" class="gallery-image">
+          <button id="drink-btn" class="drink-btn">DRINK</button>
+        </picture>
+
+        <picture class="menu-image">
+          <source media="(max-width: 687px)" srcset="images/ibiza-beach-web-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/ibiza-beach-web.jpg">
+          <img src="images/ibiza-beach-web.jpg" alt="Ibiza coastline" class="gallery-image">
+          <button id="day-btn" class="day-btn">DAY</button>
+        </picture>
+
+        <picture class="menu-image">
+          <source media="(max-width: 687px)" srcset="images/cityscape-night-web-mobile.jpg">
+          <source media="(min-width: 688px)" srcset="images/cityscape-night-web.jpg">
+          <img src="images/cityscape-night-web.jpg" alt="Cityscape at night" class="gallery-image">
+          <button id="night-btn" class="night-btn">NIGHT</button>
+        </picture>
+      </section>
+
+
+      
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Select your faves</h3>
+        <form action="/action_page.php">
+        <p>Budget</p>
+          <label for="eatoption1"> Cheap</label>
+            <input type="checkbox" id="eatoption1" name="eatoption1" value="Cheap"><br>
+          <label for="eatoption2"> Expensive</label>
+            <input type="checkbox" id="eatoption2" name="eatoption2" value="Expensive"><br><br>
+        <p>Vibe</p>
+          <label for="eatoption3"> Chilled</label>
+            <input type="checkbox" id="eatoption3" name="eatoption3" value="Chilled"><br>
+          <label for="eatoption4"> Fancy</label>
+            <input type="checkbox" id="eatoption4" name="eatoption4" value="Fancy"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+
+
+
+
+      <script src="js/main.js"></script>
+    </main>
+
+    <footer class="footer">
+        <p>&copy;KnowYourPlace</p>
+        <ul class="social-list">
+          <li>
+            <a href="https://www.twitter.com/charlottekeddie" target="_blank"><img src="images/twitter.svg" class="twitter" alt="Twitter logo"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/charlotte-keddie-15522316?originalSubdomain=es" target="_blank"><img src="images/instagram.svg" class="instagram" alt="Instagram logo"></a>
+          </li>
+        </ul>
+               
+        <div class="contact-us">
+          <p>Contact Us</p>
+          <form action="action_page.php" class="contact" id="contact-form">
+        
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+
+    </footer>
+  </div>
+  </body>
+</html>
