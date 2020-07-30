@@ -511,7 +511,7 @@ input[type=submit]:hover {
   "results-image-three results-text-three";
   /* "results-text-two results-image-two"
   "results-text-two results-image-two"; */
-  display: none;
+  /* display: none;                      This will be hidden once I figure out how the DB will speak to results page.  */
 }
 
 .results-gallery img {
