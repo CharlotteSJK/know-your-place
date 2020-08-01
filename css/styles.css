@@ -112,9 +112,9 @@ a:link {
   font-family: 'Playfair Display', serif; 
 }
 
-.down-arrow {
+.down-arrow-one {
   max-width: 10%;
-  margin-top: 35px;
+  padding-top: 45px;
 }
 
 /* @supports (-webkit-text-stroke: 0.5px black) {
@@ -126,10 +126,11 @@ a:link {
 } */
 
 .options {
-  margin: 20px 0 20px 10px;
-  font-size: 14px;
+  margin: 5px 0 30px 15px;
+  padding-top: 15px;
+  font-size: 18px;
   font-weight: 370;
-  line-height: 1.6;
+  line-height: 1.7;
   word-spacing: 1px;
   text-transform: uppercase;
 }
@@ -158,36 +159,43 @@ a:link {
 } */
 
 .blurb {
-  margin: 0 10px 0 10px;
-  font-size: 14px;
+  margin: 15px;
+  font-size: 18px;
   font-weight: 350;
   line-height: 1.4;
 }
 
 .select {
-  font-size: 22px;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 0px;
   text-align: center;
+  font-family: 'Playfair Display', serif; 
+}
+
+.down-arrow-two {
+  max-width: 10%;
+  padding-top: 12px;
 }
 
 .gallery {
-  margin-top: 15px;
+  margin: 10px;
   padding: 8px 5px 40px 5px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   "gallery-image gallery-image"
-  "gallery-image gallery-image";
+  "gallery-image gallery-image"; */
   text-align: center;
 }
 
 .gallery-image {
-  max-width: 95%;
+  max-width: 75%;
   opacity: 0.7;
   border-radius: 3%;
   border: solid 1px #000;
+  margin: 15px;
 }
 
 .menu-image {
@@ -197,9 +205,9 @@ a:link {
 .eat-btn, 
 .day-btn {
   position: absolute;
-  top: 24%;
-  right: 32%;
-  font-size: 30px;
+  bottom: 340%;
+  right: 34%;
+  font-size: 50px;
   background: none;
   color: #ebf0fa;
   text-shadow: 2px 2px #000;
@@ -209,9 +217,9 @@ a:link {
 .drink-btn,
 .night-btn {
   position: absolute;
-  top: 24%;
-  right: 18%;
-  font-size: 30px;
+  bottom: 340%;
+  right: 22%;
+  font-size: 50px;
   background: none;
   color: #ebf0fa;
   text-shadow: 2px 2px #000;
