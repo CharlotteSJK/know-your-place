@@ -117,14 +117,6 @@ a:link {
   padding-top: 45px;
 }
 
-/* @supports (-webkit-text-stroke: 0.5px black) {
-  .tagline,
-  .select {
-    -webkit-text-stroke: 0.5px black;
-    -webkit-text-fill-color: transparent;
-  }
-} */
-
 .options {
   margin: 5px 0 30px 15px;
   padding-top: 15px;
@@ -383,21 +375,20 @@ input[type=submit]:hover {
   .tagline,
   .select {
     font-size: 40px;
-    text-align: center;
   }
 
   .tagline {
-    top: 50%;
-    right: 8%;
+    top: 44%;
+    left: 4%;
   }
 
   .blurb {
-    font-size: 20px;
-    margin: 10px;
+    font-size: 22px;
+    margin: 20px;
   }
 
   .options {
-    font-size: 21px;
+    font-size: 25px;
     margin-left: 68px;
   }
 
