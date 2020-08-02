@@ -117,6 +117,14 @@ a:link {
   padding-top: 45px;
 }
 
+/* @supports (-webkit-text-stroke: 0.5px black) {
+  .tagline,
+  .select {
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: transparent;
+  }
+} */
+
 .options {
   margin: 5px 0 30px 15px;
   padding-top: 15px;
@@ -461,42 +469,40 @@ input[type=submit]:hover {
 .results-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 40px 1fr 5%;
+  grid-template-rows: 45px 1fr 5%;
   grid-template-areas: 
-  "header header"
-  "main main"
-  "footer footer";
+  "header"
+  "main"
+  "footer";
   height: 100vh;
 }
 
 .results-image-holder {
-  position: relative;
+  padding-top: 6px;
 }
 
 .results-main-image {
   max-width: 100%;
+  position: relative;
 }
 
 .results-instruction,
 .send-to-email {
-  
   background-color: transparent;
   font-weight: 370;
   word-spacing: 2px;
-  font-size: 16px;
+  font-size: 20px;
+  margin: 18px 15px 18px 15px;
   color: #ebf0fa;
 }
 
-
-
 .results-nav {
   position: absolute;
-  top: 10%;
-  /* margin-left: 15px; */
+  top: 8%;
+  left: 2%;
   background-color: transparent;
   margin: auto;
   text-align: center;
-  
 }
 
 .results-nav li {
@@ -517,66 +523,47 @@ input[type=submit]:hover {
   background-color: transparent;
   color: #ebf0fa;
   text-shadow: 2px 2px #000;
-  font-size: 25px;
+  font-size: 32px;
 }
 
 .results-gallery {
-  margin: 15px 10px 20px 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  margin: 20px 30px 20px 30px;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
   grid-template-areas: 
-  "results-image-one results-text-one"
-  "results-text-two results-image-two"
-  "results-image-three results-text-three";
-  /* "results-text-two results-image-two"
-  "results-text-two results-image-two"; */
+  "result"
+  "result"
+  "result"
+  "result"
+  "result"
+  "result"; */
   /* display: none;                      This will be hidden once I figure out how the DB will speak to results page.  */
+}
+
+.result {
+  margin: 15px 0 25px 0;
+  /* grid-area: result; */
 }
 
 .results-gallery img {
   max-width: 100%;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: solid 1px #000;
 }
 
-.results-image-one {
-  grid-area: results-image-one
-}
-
-.results-text-one {
-  grid-area: results-text-one;
-}
-
-.results-image-two {
-  grid-area: results-image-two
-}
-
-.results-text-two {
-  grid-area: results-text-two;
-}
-
-.results-image-three {
-  grid-area: results-image-three
-}
-
-.results-text-three {
-  grid-area: results-text-three;
-}
-
 .results-gallery h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 3px;
 }
 
 .results-gallery p {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .map {
-  margin: 20px 10px 20px 10px;
+  margin: 20px 15px 20px 15px;
 }
 
 
